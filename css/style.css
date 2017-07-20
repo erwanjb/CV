@@ -1,0 +1,96 @@
+body{
+  font-family: 'Artifika', serif;
+}
+#logo{
+  width:100px;
+  height:100px;
+  background-color: transparent;
+  -webkit-animation : rot 1s ease infinite;
+  margin-top: 20px;
+}
+@keyframes rot {
+    from{transform: rotate(0deg);}
+
+    50%{transform: rotate(-180deg);}
+
+   to {transform: rotate(-360deg);}
+}
+
+header{
+  background-color:aquamarine;
+}
+#header{
+  text-align:center;
+  border:3px dashed;
+  width:100%;
+  margin:20px;
+  border-radius: 20%;
+}
+#entete{
+  display: flex;
+}
+nav ul {
+  display: flex;
+  padding-bottom: 20px;
+}
+ul li{
+  width:150px;
+  list-style-type: none;
+}
+
+@-webkit-keyframes rebond1 {
+    from { top : 30px ; }
+    80% { top : 300px ; }
+    90% { top : 250px ; }
+    to { top : 300px ; }
+}
+@-webkit-keyframes rebond2 {
+    from { left : 10% ; }
+    80% { left : 40% ; }
+    90% { left : 30% ; }
+    to { left : 40% ; }
+}
+@-webkit-keyframes rebond3 {
+    from { left : 90% ; }
+    80% { left : 40% ; }
+    90% { left : 50% ; }
+    to { left : 40% ; }
+}
+span{
+  color:dimgrey;
+  width:350px;
+  text-align: center;
+}
+#bienvenue{
+  font-size: 4em;
+  position:absolute;
+  top:300px;
+  -webkit-animation: rebond1 2s ease-in;
+  left:40%
+}
+#surmon{
+  font-size: 4em;
+  position:absolute;
+  top:400px;
+  left:40%;
+  -webkit-animation: rebond2 2s ease-in;
+
+}
+#site{
+  font-size: 4em;
+  position:absolute;
+  top:500px;
+  left:40%;
+  -webkit-animation: rebond3 2s ease-in;
+}
+main{
+  border:10px solid blue;
+  height:350px;
+  background-color:blanchedalmond;
+}
+#maphoto{
+  width:500px;
+  height:300px;
+  margin-top: 25px;
+  border-radius: 50%;
+}
