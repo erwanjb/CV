@@ -85,9 +85,12 @@ span{
 }
 main{
   border:10px solid blue;
-  height:350px;
+
   background-color:blanchedalmond;
   margin-top: 50px;
+}
+#form{
+  text-align: center;
 }
 #maphoto{
   width:500px;
