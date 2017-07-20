@@ -87,10 +87,21 @@ main{
   border:10px solid blue;
   height:350px;
   background-color:blanchedalmond;
+  margin-top: 50px;
 }
 #maphoto{
   width:500px;
   height:300px;
   margin-top: 25px;
   border-radius: 50%;
+}
+footer{
+  text-align:center;
+  background-color:aquamarine;
+  padding: 20px;
+  margin-top:50px;
+}
+#exp li{
+  width:100%;
+  font-size: 1em;
 }
