@@ -108,3 +108,14 @@ footer{
   width:100%;
   font-size: 1em;
 }
+#num{
+  float: right;
+  margin-top: 50px;
+}
+#form{
+  border:5px solid aquamarine;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 20%;
+  margin-bottom: 50px;
+}
