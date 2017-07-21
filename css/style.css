@@ -5,7 +5,7 @@ body{
   width:100px;
   height:100px;
   background-color: transparent;
-  -webkit-animation : rot 1s ease infinite;
+  -webkit-animation : rot 2s ease infinite;
   margin-top: 20px;
 }
 @keyframes rot {
@@ -16,8 +16,11 @@ body{
    to {transform: rotate(-360deg);}
 }
 
-header{
-  background-color:aquamarine;
+#bandeau {
+  background-image: url("../image/num.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
 }
 #header{
   text-align:center;
@@ -28,21 +31,24 @@ header{
 }
 #entete{
   display: flex;
+  background-color: aquamarine;
 }
 nav ul {
   display: flex;
   padding-bottom: 20px;
 }
-ul li{
+div + nav ul li{
   width:150px;
   list-style-type: none;
+  font-family: 'Artifika', serif;
+  background-image: url("../image/orange.jpg");
 }
 
 @-webkit-keyframes rebond1 {
     from { top : 30px ; }
-    80% { top : 300px ; }
-    90% { top : 250px ; }
-    to { top : 300px ; }
+    80% { top : 600px ; }
+    90% { top : 550px ; }
+    to { top : 600px ; }
 }
 @-webkit-keyframes rebond2 {
     from { left : 10% ; }
@@ -64,14 +70,14 @@ span{
 #bienvenue{
   font-size: 4em;
   position:absolute;
-  top:300px;
+  top:600px;
   -webkit-animation: rebond1 2s ease-in;
   left:40%
 }
 #surmon{
   font-size: 4em;
   position:absolute;
-  top:400px;
+  top:700px;
   left:40%;
   -webkit-animation: rebond2 2s ease-in;
 
@@ -79,7 +85,7 @@ span{
 #site{
   font-size: 4em;
   position:absolute;
-  top:500px;
+  top:800px;
   left:40%;
   -webkit-animation: rebond3 2s ease-in;
 }
@@ -89,9 +95,7 @@ main{
   background-color:blanchedalmond;
   margin-top: 50px;
 }
-#form{
-  text-align: center;
-}
+
 #maphoto{
   width:500px;
   height:300px;
@@ -114,8 +118,26 @@ footer{
 }
 #form{
   border:5px solid aquamarine;
-  margin-left: 20%;
-  margin-right: 20%;
-  border-radius: 20%;
+  border-radius: 20px;
   margin-bottom: 50px;
+  text-align: center;
+  width:60%;
+  margin-left: 50px;
+}
+section{
+  display: flex;
+}
+aside{
+  border:5px solid aquamarine;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+aside img{
+  width:100px;
+  height: 100px;
 }
