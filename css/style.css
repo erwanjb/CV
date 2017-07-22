@@ -5,7 +5,7 @@ body{
   width:100px;
   height:100px;
   background-color: transparent;
-  -webkit-animation : rot 2s ease infinite;
+  animation : rot 2s ease infinite;
   margin-top: 20px;
 }
 @keyframes rot {
@@ -31,24 +31,34 @@ body{
 }
 #entete{
   display: flex;
-  background-color: aquamarine;
+  background-color: LightSeaGreen;
+  color: white;
 }
 nav ul {
   display: flex;
-  padding-bottom: 20px;
+  padding-left: 0px;
 }
 div + nav ul li{
-  width:150px;
+  width:100%;
   list-style-type: none;
   font-family: 'Artifika', serif;
-  background-image: url("../image/orange.jpg");
+  background-color: black;
+  height: 50px;
+  text-align: center;
+  padding-top: 20px;
+  margin-left: 0px;
 }
-
+nav ul li a {
+  color: white;
+}
+nav ul li a:hover{
+  color:red;
+}
 @-webkit-keyframes rebond1 {
     from { top : 30px ; }
-    80% { top : 600px ; }
-    90% { top : 550px ; }
-    to { top : 600px ; }
+    80% { top : 650px ; }
+    90% { top : 600px ; }
+    to { top : 650px ; }
 }
 @-webkit-keyframes rebond2 {
     from { left : 10% ; }
@@ -70,14 +80,14 @@ span{
 #bienvenue{
   font-size: 4em;
   position:absolute;
-  top:600px;
+  top:650px;
   -webkit-animation: rebond1 2s ease-in;
   left:40%
 }
 #surmon{
   font-size: 4em;
   position:absolute;
-  top:700px;
+  top:750px;
   left:40%;
   -webkit-animation: rebond2 2s ease-in;
 
@@ -85,7 +95,7 @@ span{
 #site{
   font-size: 4em;
   position:absolute;
-  top:800px;
+  top:850px;
   left:40%;
   -webkit-animation: rebond3 2s ease-in;
 }
@@ -104,9 +114,10 @@ main{
 }
 footer{
   text-align:center;
-  background-color:aquamarine;
+  background-color:LightSeaGreen;
   padding: 20px;
   margin-top:50px;
+  color: white;
 }
 #exp li{
   width:100%;
@@ -117,7 +128,7 @@ footer{
   margin-top: 50px;
 }
 #form{
-  border:5px solid aquamarine;
+  border:5px solid LightSeaGreen;
   border-radius: 20px;
   margin-bottom: 50px;
   text-align: center;
@@ -128,7 +139,7 @@ section{
   display: flex;
 }
 aside{
-  border:5px solid aquamarine;
+  border:5px solid LightSeaGreen;
   border-radius: 20px;
   margin-bottom: 50px;
   margin-left: 50px;
