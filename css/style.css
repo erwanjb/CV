@@ -1,5 +1,9 @@
 body{
   font-family: 'Artifika', serif;
+  background-image: url("../image/fond.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 #logo{
   width:100px;
