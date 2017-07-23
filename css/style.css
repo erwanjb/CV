@@ -28,14 +28,14 @@ body{
 }
 #header{
   text-align:center;
-  border:3px dashed;
   width:100%;
   margin:20px;
-  border-radius: 20%;
 }
 #entete{
   display: flex;
-  background-color: LightSeaGreen;
+  background-image: url("../image/bleu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
 }
 nav ul {
@@ -118,7 +118,9 @@ main{
 }
 footer{
   text-align:center;
-  background-color:LightSeaGreen;
+  background-image: url("../image/bleu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 20px;
   margin-top:50px;
   color: white;
@@ -157,4 +159,10 @@ aside{
 aside img{
   width:150px;
   height: 150px;
+}
+footer p a{
+  color:black;
+}
+footer p a:hover{
+  color: red;
 }
