@@ -134,19 +134,17 @@ footer{
   margin-top: 50px;
 }
 #form{
-  border:5px solid LightSeaGreen;
-  border-radius: 20px;
   margin-bottom: 50px;
   text-align: center;
   width:60%;
   margin-left: 50px;
+  background-color: #4B3763;
+  color: white;
 }
 section{
   display: flex;
 }
 aside{
-  border:5px solid LightSeaGreen;
-  border-radius: 20px;
   margin-bottom: 50px;
   margin-left: 50px;
   margin-right: 50px;
@@ -155,6 +153,8 @@ aside{
   padding-top: 50px;
   align-content: space-around;
   justify-content: space-around;
+  background-color: #C8BCD8;
+  max-width: 600px;
 }
 aside img{
   width:150px;
@@ -165,4 +165,16 @@ footer p a{
 }
 footer p a:hover{
   color: red;
+}
+#form h2{
+  text-transform: uppercase;
+}
+#form h2:nth-child(1){
+  color:red;
+}
+#form h2:nth-child(4){
+  color:green;
+}
+#form h2:nth-child(11){
+  color:black;
 }
