@@ -140,6 +140,7 @@ footer{
   margin-left: 50px;
   background-color: #4B3763;
   color: white;
+  transform: rotate(-3deg);
 }
 section{
   display: flex;
@@ -155,6 +156,7 @@ aside{
   justify-content: space-around;
   background-color: #C8BCD8;
   max-width: 600px;
+  transform: rotate(3deg);
 }
 aside img{
   width:150px;
