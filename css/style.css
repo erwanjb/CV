@@ -5,12 +5,34 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-#logo{
+#logo:first-child{
   width:100px;
   height:100px;
-  background-color: transparent;
   animation : rot 2s ease infinite;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-left: 60px;
+  z-index: 2;
+}
+#logo:last-child{
+  width:100px;
+  height:100px;
+  animation : rot 2s ease infinite;
+  margin-top: 30px;
+  margin-right: 60px;
+  z-index: 2;
+}
+#cabine{
+  width: 150px;
+  height:150px;
+  position: absolute;
+  left: 100px;
+  animation : train 2S ease infinite;
+}
+@keyframes train {
+    from { left : 100px; }
+    45% { left:  : 80% ; }
+    55% { left : 80% ; }
+    to { left : 100px ; }
 }
 @keyframes rot {
     from{transform: rotate(0deg);}
@@ -33,10 +55,11 @@ body{
 }
 #entete{
   display: flex;
-  background-image: url("../image/bleu.jpg");
+  background-image: url("../image/bleu2.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   color: white;
+  position:relative;
 }
 nav ul {
   display: flex;
