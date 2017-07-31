@@ -5,42 +5,6 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-#logo:first-child{
-  width:100px;
-  height:100px;
-  animation : rot 2s ease infinite;
-  margin-top: 30px;
-  margin-left: 60px;
-  z-index: 2;
-}
-#logo:last-child{
-  width:100px;
-  height:100px;
-  animation : rot 2s ease infinite;
-  margin-top: 30px;
-  margin-right: 60px;
-  z-index: 2;
-}
-#cabine{
-  width: 150px;
-  height:150px;
-  position: absolute;
-  left: 100px;
-  animation : train 2S ease infinite;
-}
-@keyframes train {
-    from { left : 100px; }
-    45% { left:  : 80% ; }
-    55% { left : 80% ; }
-    to { left : 100px ; }
-}
-@keyframes rot {
-    from{transform: rotate(0deg);}
-
-    50%{transform: rotate(-180deg);}
-
-   to {transform: rotate(-360deg);}
-}
 
 #bandeau {
   background-image: url("../image/num.jpg");
@@ -55,7 +19,7 @@ body{
 }
 #entete{
   display: flex;
-  background-image: url("../image/bleu2.jpg");
+  background-image: url("../image/bleu.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: white;
@@ -65,7 +29,7 @@ nav ul {
   display: flex;
   padding-left: 0px;
 }
-div + nav ul li{
+ nav ul li{
   width:100%;
   list-style-type: none;
   font-family: 'Artifika', serif;
@@ -75,17 +39,22 @@ div + nav ul li{
   padding-top: 20px;
   margin-left: 0px;
 }
-nav ul li a {
+nav ul li a span, nav ul li a{
   color: white;
 }
-nav ul li a:hover{
+nav ul li a span:hover, nav ul li a:hover{
   color:red;
+} 
+@media only screen and (max-width:600px){
+  nav ul li a span{
+    display: none;
+  }
 }
 @-webkit-keyframes rebond1 {
-    from { top : 30px ; }
-    80% { top : 650px ; }
-    90% { top : 600px ; }
-    to { top : 650px ; }
+    from { top : -400px ; }
+    80% { top : 0px ; }
+    90% { top : 50px ; }
+    to { top : 0px ; }
 }
 @-webkit-keyframes rebond2 {
     from { left : 10% ; }
@@ -99,30 +68,36 @@ nav ul li a:hover{
     90% { left : 50% ; }
     to { left : 40% ; }
 }
-span{
+main span{
   color:dimgrey;
-  width:350px;
+  width:30%;
   text-align: center;
 }
+@media only screen and (max-width:1000px){
+  main span{
+    display: none;
+  }
+}
 #bienvenue{
-  font-size: 4em;
+  width:30%;
+  font-size: 3em;
   position:absolute;
-  top:650px;
+  top:0;
   -webkit-animation: rebond1 2s ease-in;
   left:40%
 }
 #surmon{
-  font-size: 4em;
+  font-size: 3em;
   position:absolute;
-  top:750px;
+  top:100px;
   left:40%;
   -webkit-animation: rebond2 2s ease-in;
 
 }
 #site{
-  font-size: 4em;
+  font-size: 3em;
   position:absolute;
-  top:850px;
+  top:200px;
   left:40%;
   -webkit-animation: rebond3 2s ease-in;
 }
@@ -131,11 +106,13 @@ main{
 
   background-color:blanchedalmond;
   margin-top: 50px;
+  position: relative;
 }
 
 #maphoto{
-  width:500px;
-  height:300px;
+  max-width:500px;
+  width:40%;
+  max-height:300px;
   margin-top: 25px;
   border-radius: 50%;
 }
@@ -153,6 +130,7 @@ footer{
   font-size: 1em;
 }
 #num{
+  width:30%;
   float: right;
   margin-top: 50px;
 }
@@ -165,9 +143,15 @@ footer{
   color: white;
   transform: rotate(-3deg);
 }
-section{
+main section{
   display: flex;
 }
+@media only screen and (max-width:600px){
+  main section{
+    display: block;
+  }
+}
+
 aside{
   margin-bottom: 50px;
   margin-left: 50px;
