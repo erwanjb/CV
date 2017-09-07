@@ -109,10 +109,11 @@ main span{
 }
 main{
   border:10px solid blue;
-
-  background-color:blanchedalmond;
+  color:#AFA6CD;
+  background-color:#322E3F;
   margin-top: 50px;
   position: relative;
+  padding-left: 50px;
 }
 
 #maphoto{
